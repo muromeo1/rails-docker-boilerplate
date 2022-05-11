@@ -1,9 +1,9 @@
-# Setup project
+### Setup project
 ```sh
 boilerplate/bin/setup
 ```
 
-# Run project
+### Run project
 ```sh
 docker compose up
 ```
