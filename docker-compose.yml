@@ -1,7 +1,6 @@
 version: "3.9"
 
 services:
-
   postgres:
     image: postgres:14.2
     environment:
@@ -31,7 +30,7 @@ services:
     links:
       - boilerplate
     ports:
-      - '8020:8020'
+      - '3000:3000'
 
 volumes:
   boilerplate-postgres:

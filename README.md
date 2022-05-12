@@ -1,14 +1,11 @@
-### Copy env file
+### Getting started
+
+Setup environment
 ```sh
-cp env-example .env
+sh setup.sh
 ```
 
-### Setup project
-```sh
-boilerplate/bin/setup
-```
-
-### Run project
+Run project
 ```sh
 docker compose up
 ```
