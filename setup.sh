@@ -15,5 +15,9 @@ echo
 echo == Initializing database ==
 docker compose run boilerplate rake db:reset
 docker compose run boilerplate rake db:migrate
+docker compose run boilerplate rake db:test:prepare
 echo
+
+echo == Generating secret ==
+echo "SECRET_TOKEN=$(docker compose run boilerplate rake secret)" >> .env
 echo == END ==
