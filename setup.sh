@@ -9,7 +9,7 @@ docker volume create --name boilerplate-postgres
 echo
 
 echo == Building docker compose ==
-docker compose up --build --no-start
+docker compose build
 echo
 
 echo == Initializing database ==
