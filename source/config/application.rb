@@ -18,7 +18,7 @@ require 'action_cable/engine'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Boilerplate
+module Source
   class Application < Rails::Application
     config.load_defaults 7.0
     config.log_level = :debug
