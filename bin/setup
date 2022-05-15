@@ -2,6 +2,8 @@
 
 echo == Copying env files ==
 cp env-example .env
+echo "UID=$(id -u)" >> .env
+echo "GID=$(id -g)" >> .env
 echo
 
 echo == Creating volumes ==
