@@ -9,3 +9,4 @@ sudo rm -rf ../rails-docker-boilerplate
 rm -rf .git
 git init -q
 git checkout -qb main
+$SHELL
