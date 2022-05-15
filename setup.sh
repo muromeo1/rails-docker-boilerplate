@@ -5,7 +5,7 @@ cp env-example .env
 echo
 
 echo == Creating volumes ==
-docker volume create --name boilerplate-postgres
+docker volume create --name source-postgres
 echo
 
 echo == Building docker compose ==
@@ -13,11 +13,11 @@ docker compose build
 echo
 
 echo == Initializing database ==
-docker compose run boilerplate rake db:reset
-docker compose run boilerplate rake db:migrate
-docker compose run boilerplate rake db:test:prepare
+docker compose run source rake db:reset
+docker compose run source rake db:migrate
+docker compose run source rake db:test:prepare
 echo
 
 echo == Generating secret ==
-echo "SECRET_TOKEN=$(docker compose run boilerplate rake secret)" >> .env
+echo "SECRET_TOKEN=$(docker compose run source rake secret)" >> .env
 echo == END ==

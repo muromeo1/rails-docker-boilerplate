@@ -4,18 +4,18 @@ services:
   postgres:
     image: postgres:14.2
     environment:
-      POSTGRES_USER: boilerplate
-      POSTGRES_PASSWORD: test_db_password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     ports:
       - '5432:5432'
     volumes:
-      - boilerplate-postgres:/var/lib/postgresql/data
+      - source-postgres:/var/lib/postgresql/data
 
-  boilerplate:
+  source:
     build:
       context: .
     volumes:
-      - ./boilerplate:/opt/app
+      - ./source:/opt/app
     links:
       - postgres
     ports:
@@ -28,9 +28,9 @@ services:
       context: .
       dockerfile: ./Dockerfile.nginx
     links:
-      - boilerplate
+      - source
     ports:
       - '3000:3000'
 
 volumes:
-  boilerplate-postgres:
+  source-postgres:

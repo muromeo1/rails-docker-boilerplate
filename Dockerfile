@@ -1,5 +1,5 @@
 # Dockerfile development version
-FROM ruby:3.1.2 AS boilerplate-development
+FROM ruby:3.1.2 AS source-development
 
 # Install yarn
 # RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg -o /root/yarn-pubkey.gpg && apt-key add /root/yarn-pubkey.gpg
@@ -12,7 +12,7 @@ RUN mkdir -p $INSTALL_PATH
 
 # Install gems
 WORKDIR $INSTALL_PATH
-COPY boilerplate/ .
+COPY source/ .
 # RUN rm -rf node_modules
 RUN rm -rf vendor
 RUN gem install rails bundler
