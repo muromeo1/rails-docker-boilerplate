@@ -15,11 +15,11 @@ docker compose build
 echo
 
 echo == Initializing database ==
-docker compose run source rake db:reset
-docker compose run source rake db:migrate
-docker compose run source rake db:test:prepare
+docker compose run --rm source rake db:reset
+docker compose run --rm source rake db:migrate
+docker compose run --rm source rake db:test:prepare
 echo
 
 echo == Generating secret ==
-echo "SECRET_TOKEN=$(docker compose run source rake secret)" >> .env
+echo "SECRET_TOKEN=$(docker compose run --rm source rake secret)" >> .env
 echo == END ==

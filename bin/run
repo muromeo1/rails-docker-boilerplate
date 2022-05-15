@@ -1,4 +1,3 @@
 #!/bin/bash
 
-docker compose run source $@
-echo $@
+docker compose run --rm source $@
