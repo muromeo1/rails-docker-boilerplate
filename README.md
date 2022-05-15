@@ -19,7 +19,7 @@ I've made this project (built as [rails --minmal](https://www.bigbinary.com/blog
 - [Reek](https://github.com/troessner/reek)
 - [RSpec](https://github.com/rspec/rspec-rails)
 
-This boilerplate comes already with a `new app creation` script that basically change this generic name and configure database name as you wish.
+This boilerplate comes already with a `new app creation` script that basically change this generic name and configure database name as well.
 
 ## Getting started
 
