@@ -1,5 +1,5 @@
 # Dockerfile development version
-FROM ruby:3.1.2 AS source-development
+FROM ruby:latest AS source-development
 
 # Install yarn
 # RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg -o /root/yarn-pubkey.gpg && apt-key add /root/yarn-pubkey.gpg
