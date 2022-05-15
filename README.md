@@ -1,5 +1,3 @@
-
-
 # Rails Docker Boilerplate
 
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
@@ -16,6 +14,7 @@ To run this boilerplate it'll be only necessary to install:
 
 I've made this project to make my life simple, so I already added some necessary gems and configured them to my necessities:
 
+- [Rails Minimal version](https://www.bigbinary.com/blog/rails-6-1-adds-minimal-option-support)
 - [Rubocop](https://github.com/rubocop/rubocop)
 - [Reek](https://github.com/troessner/reek)
 - [RSpec](https://github.com/rspec/rspec-rails)
