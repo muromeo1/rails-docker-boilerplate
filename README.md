@@ -53,9 +53,14 @@ docker compose up
 
 ## Extras
 
-Running rails commands
+Use `bin/run` to execute any command related to the container
+
+Obs.: using this app, you will always need to use `bin/run` to run everything as you local terminal
 ```
-docker compose run source rails g controller ...
+bin/run rails g controller users
+bin/run rake -T
+bin/run ruby -v
+bin/run rails -v
 ```
 
 Bundle install (it's necessary to build docker service again)
