@@ -1,11 +1,11 @@
 #!/bin/bash
 
 read -p 'Enter new project name: ' name
-grep -lR "????" ./env-example | xargs sed -i "s/????/$name/g"
-mkdir ../$name
-cp -a ../"$(basename $PWD)"/. ../$name
+cp -a ../rails-docker-boilerplate ../$name
 cd ../$name
 rm -rf ./new_app.sh
-sudo rm -rf ../"$(basename $PWD)"
+grep -lR "????" ./env-example | xargs sed -i "s/????/$name/g"
+sudo rm -rf ../rails-docker-boilerplate
 rm -rf .git
-git init
+git init -q
+git checkout -qb main
