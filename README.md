@@ -20,25 +20,34 @@ I've made this project to make my life simple, so I already added some necessary
 - [Reek](https://github.com/troessner/reek)
 - [RSpec](https://github.com/rspec/rspec-rails)
 
+This boilerplate comes already with a `new app creation` script that basically change this generic name and configure database name as you wish.
+
 ## Getting started
 
-1. Create a new app:
-```sh
-# ./rails-docker-boilerplate/
+1. Clone this repo
+```
+git clone git@github.com:muromeo1/rails-docker-boilerplate.git
+```
 
+2. Enter in the directory
+```
+cd rails-docker-boilerplate/
+```
+
+3. Inside of directory, create a new app running the command
+```
 bin/new_app
-``` 
-2. Enter the name of your project, then setup new project
-```sh
-# ./your-new-project/
+```
 
+4. It'll move you automatically to your new app, so just run setup configuration
+```
 bin/setup
 ```
 
 ## Running the project
 
 1. Run docker-compose:
-```sh
+```
 docker compose up
 ```
 2. Then access `http://localhost:3000`
