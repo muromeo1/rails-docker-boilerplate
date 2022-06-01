@@ -13,7 +13,7 @@ To run this boilerplate it'll be only necessary to install:
 - [Docker](https://docs.docker.com/engine/install/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-I've made this project (built as [rails --minmal](https://www.bigbinary.com/blog/rails-6-1-adds-minimal-option-support)) to make my life simple, so I already added some necessary gems and configured them to my necessities:
+I've made this project (built as [rails --minimal](https://www.bigbinary.com/blog/rails-6-1-adds-minimal-option-support)) to make my life simple, so I already added some necessary gems and configured them to my necessities:
 
 - [Rubocop](https://github.com/rubocop/rubocop)
 - [Reek](https://github.com/troessner/reek)
