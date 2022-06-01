@@ -6,9 +6,16 @@ FROM ruby:latest AS source-development
 # RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" > /etc/apt/sources.list.d/yarn.list
 # RUN apt-get update && apt-get install -y --no-install-recommends nodejs yarn
 
+ARG UID
+ARG GID
+
 # Default directory
 ENV INSTALL_PATH /opt/app
 RUN mkdir -p $INSTALL_PATH
+
+# Cache directory
+RUN mkdir -p /.cache
+RUN chown $UID:$GID /.cache
 
 # Install gems
 WORKDIR $INSTALL_PATH
